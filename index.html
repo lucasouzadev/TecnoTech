@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoTech - Sua Loja de Tecnologia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="promo-banner">
+        <div class="container">
+            <p><i class="fas fa-bolt"></i> Use o cupom <strong>DESCONTO10</strong> e ganhe 10% OFF em toda a loja! <i class="fas fa-bolt"></i></p>
+        </div>
+    </div>
+    <header class="header">
+        <div class="container">
+            <h1><a href="index.html" class="logo-link">TecnoTech</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="index.html#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="index.html#solicitar" class="nav-link">Solicitar Produto</a></li>
+                </ul>
+            </nav>
+            <div class="carrinho-icon">
+                <a href="carrinho.html" class="carrinho-link" title="Ver Carrinho">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="carrinho-contador">0</span>
+                </a>
+            </div>
+            <div class="menu-mobile">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="sobre" class="sobre">
+            <div class="container">
+                <div class="sobre-grid">
+                    <div class="sobre-imagem">
+                        <img src="https://placehold.co/400x400/2196F3/FFFFFF?text=TecnoTech+Store" alt="TecnoTech Store">
+                    </div>
+                    <div class="sobre-texto">
+                        <h2>Sobre a TecnoTech</h2>
+                        <p>Bem-vindo à TecnoTech, sua loja especializada em tecnologia e inovação! Oferecemos os mais recentes produtos tecnológicos com garantia de qualidade e suporte técnico especializado.</p>
+                        <p>Com mais de 5 anos no mercado, somos referência em produtos eletrônicos, gadgets e acessórios tecnológicos. Nossa missão é trazer o futuro para o presente, oferecendo as últimas novidades do mundo tech.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="produtos" class="produtos">
+            <div class="container">
+                <h2>Nossos Produtos</h2>
+                <div class="filtros-rapidos">
+                    <button class="filtro-btn ativo">Todos</button>
+                    <button class="filtro-btn">Mais Vendidos</button>
+                    <button class="filtro-btn">Promoções</button>
+                    <button class="filtro-btn">Lançamentos</button>
+                </div>
+                <div class="produtos-grid">
+                    <div class="produto-card">
+                        <div class="produto-tag promocao">-20%</div>
+                        <img src="https://placehold.co/300x300/1a1a1a/FFFFFF?text=Smartphone" alt="Smartphone XYZ">
+                        <h3>Smartphone XYZ Pro Max</h3>
+                        <p class="produto-preco">
+                            <span class="preco-original">R$ 2.999,99</span>
+                            <span class="preco-promocional">R$ 2.399,99</span>
+                        </p>
+                        <p>Smartphone top de linha com câmera quádrupla, 256GB de armazenamento e 12GB de RAM.</p>
+                        <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="produto-card">
+                        <div class="produto-tag novo">Novo</div>
+                        <img src="https://placehold.co/300x300/1a1a1a/FFFFFF?text=Smartwatch" alt="Smartwatch Tech">
+                        <h3>Smartwatch Tech Pro</h3>
+                        <p class="produto-preco">R$ 899,99</p>
+                        <p>Smartwatch com monitor cardíaco, GPS integrado e mais de 100 modos de exercício.</p>
+                        <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="produto-card">
+                        <div class="produto-tag mais-vendido">Top</div>
+                        <img src="https://placehold.co/300x300/1a1a1a/FFFFFF?text=Fone+Bluetooth" alt="Fone Bluetooth">
+                        <h3>Fone Bluetooth Pro Max</h3>
+                        <p class="produto-preco">R$ 499,99</p>
+                        <p>Fone sem fio com cancelamento de ruído ativo e até 30 horas de bateria.</p>
+                        <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                    </div>
+                    <div class="produto-card">
+                        <img src="https://placehold.co/300x300/1a1a1a/FFFFFF?text=Tablet" alt="Tablet Ultra">
+                        <h3>Tablet Ultra Slim</h3>
+                        <p class="produto-preco">R$ 1.999,99</p>
+                        <p>Tablet com tela de 10.8", processador octa-core e suporte para caneta digital.</p>
+                        <button class="btn-adicionar">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="solicitar" class="solicitar">
+            <div class="container">
+                <h2>Solicitar Produto</h2>
+                <p class="solicitar-desc">Não encontrou o produto que procura? Preencha o formulário abaixo e te avisaremos quando estiver disponível:</p>
+                <form id="form-solicitar" class="form-solicitar">
+                    <div class="form-grupo">
+                        <label for="nome">Seu Nome:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="email">Seu E-mail:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="produto">Produto Desejado:</label>
+                        <input type="text" id="produto" name="produto" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="descricao">Especificações Desejadas:</label>
+                        <textarea id="descricao" name="descricao" rows="4" required placeholder="Descreva as características do produto que você procura..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-enviar">Enviar Solicitação</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <h3>Siga a TecnoTech nas Redes</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2024 TecnoTech - Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
